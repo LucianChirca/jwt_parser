@@ -1,0 +1,20 @@
+[package]
+name = "jwt_parser"
+version = "0.1.0"
+edition = "2021"
+authors = ["lucian.chirca@gmail.com"]
+license = "MIT OR Apache-2.0"
+description = "A simple jwt token parser cli tool. Pretty prints the results."
+readme = "README.md"
+homepage = "https://github.com/LucianChirca/jwt_parser"
+repository = "https://github.com/LucianChirca/jwt_parser"
+keywords = ["cli", "jwt", "decode"]
+categories = ["command-line-utilities"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+base64 = "0.22.1"
+clap = { version = "4.5.8", features = ["derive"] }
+serde = "1.0.204"
+serde_json = "1.0.120"
